@@ -9,14 +9,14 @@
 	// It is possible you have seen this before -- if so, that's fine, if not, that's fine, too
 
 	// Output..
-	alert("hello");
+	//alert("hello");
 	console.log("hello in console");
 
 	function displayInformation () {
-		document.querySelector('h1').innerHTML = "A name";
+		document.querySelector('h1').innerHTML = "Ozan Alkan";
 		document.querySelector("#URL").innerHTML = document.documentURI; // URI means something like URL -- slight differences for specificity
 		document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length
-		document.querySelector('#time').innerHTML = new Date();
+		document.querySelector('#time').value = new Date();
 		var body = document.querySelector('body')
 		body.style.background = "#CCEE00";
 		// One place to find color option codes: https://www.w3schools.com/colors/colors_picker.asp
@@ -30,11 +30,14 @@
 
 	function handleClick(){
 		alert("hello");
+		
+	function handleClick2(){
+		alert("March 20, 2019");
 	}
 </script>
 <style>
 p{
-	background-color: #b3b3b3;
+	background-color: #8080ff;
 	border: 3px solid #FFFFFF;
 	padding: 3%;
 	font-size: 1.1em;
@@ -56,7 +59,7 @@ p{
 	<p>
 		The URL of this page is: <span id = "URL"></span><br/>
 		The number of list items for this page: <span id = "items"></span><br/>
-		The current date/time is: <span id = "time"></span><br/>
+		The current date/time is: <input type=text id = "time"></span><br/>
 	</p>
 	<p>Some universities:</p>
 	<ul>
@@ -71,6 +74,8 @@ p{
 	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
+	<br>
+	<button onclick=handleClick2() id="Spring-button">Spring Equinox 2019</button>
 
 </body>
 </html>
