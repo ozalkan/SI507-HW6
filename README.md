@@ -79,19 +79,35 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+I have to put // charaters before a comment
+```js
+//This is a comment
+```
+
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes the data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print funciton in python, we should use alert() function.
+
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+```js
+//alert("hello");
 
+The current date/time is: <input type=text id = "time"></span><br/>
+```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-* **What does the word `document` represent in this code? Explain briefly.**
+I would change the string (currently `A name` string) in the displayInformation () function.
 
+* **What does the word `document` represent in this code? Explain briefly.**
+Document object represents the html document which is displayed in the bvrowser window. It has various properties that refer to other objects so we can use them to reach other elements in the page.
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+
+It reaches to li (list) element, count them and writes in the `items` element.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
