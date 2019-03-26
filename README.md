@@ -110,8 +110,11 @@ Document object represents the html document which is displayed in the bvrowser 
 It reaches to li (list) element, count them and writes in the `items` element.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+It would be browser's default (by default- white)
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
+Because their style (for <p> tag) determined by CSS under <style> tag. I can change the `background-color: #b3b3b3;` code. I would replace #b3b3b3 hex code with desired color.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
@@ -127,7 +130,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-
+We have added an event to the button's on click event so when we press the button, it calls handleClick() function which is declared before.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
@@ -139,12 +142,15 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+They are determined by CSS under <style> tag. 
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+It checks the input to make sure that user entered the word only. It is a pattern for user input.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+It represent the duration of the error message in miliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
