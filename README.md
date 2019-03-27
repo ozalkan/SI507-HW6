@@ -116,7 +116,7 @@ It would be browser's default (by default- white)
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-Because their style (for <p> tag) determined by CSS under <style> tag. I can change the `background-color: #b3b3b3;` code. I would replace #b3b3b3 hex code with desired color.
+Because their style (for `<p>` tag) determined by CSS under `<style>` tag. I can change the `background-color: #b3b3b3;` code. I would replace #b3b3b3 hex code with desired color.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
