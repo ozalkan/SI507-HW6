@@ -89,7 +89,7 @@ I need to open the html file in the browser.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print funciton in python, we should use alert() function.
+We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print function in python, we should use alert() function.
 
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
