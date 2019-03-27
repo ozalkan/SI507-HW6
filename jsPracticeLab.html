@@ -15,10 +15,11 @@
 	function displayInformation () {
 		document.querySelector('h1').innerHTML = "Ozan Alkan";
 		document.querySelector("#URL").innerHTML = document.documentURI; // URI means something like URL -- slight differences for specificity
-		document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length
-		document.querySelector('#time').value = new Date();
-		var body = document.querySelector('body')
-		body.style.background = "#CCEE00";
+		document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length;
+		document.querySelector('#time').innerHTML = new Date();
+		
+		//var body = document.querySelector('body')
+		//body.style.background = "#CCEE00";
 		// One place to find color option codes: https://www.w3schools.com/colors/colors_picker.asp
 		body.style.margin = "10%";		
 	}
@@ -28,16 +29,29 @@
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
 
+	function MycopyFunction(){
+		document.querySelector('#mycheer').innerHTML += "O Canada<br>"
+	}
+
 	function handleClick(){
 		alert("hello");
-		
-	function handleClick2(){
-		alert("March 20, 2019");
 	}
+	function showdatetime(){
+		var mydate;
+		mydate= new Date();
+
+		alert(mydate);
+	}
+	function showEquinox(){
+		alert("March 20, 2019");
+
+	}
+
+
 </script>
 <style>
 p{
-	background-color: #8080ff;
+	background-color: #877FEE;
 	border: 3px solid #FFFFFF;
 	padding: 3%;
 	font-size: 1.1em;
@@ -47,7 +61,6 @@ p{
 </head>
 <body onload = "displayInformation();">
 	<h1>A name or title goes here</h1>
-
 
 	<ol>
 		<li>Apples</li>
@@ -59,23 +72,26 @@ p{
 	<p>
 		The URL of this page is: <span id = "URL"></span><br/>
 		The number of list items for this page: <span id = "items"></span><br/>
-		The current date/time is: <input type=text id = "time"></span><br/>
+		The current date/time is: <span id="time"></span><br/>
 	</p>
+	<button onclick="showdatetime();">Show the current date/time</button><br/><br/>
+	<button onclick="showEquinox();">Spring Equinox 2019</button>
 	<p>Some universities:</p>
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy="MycopyFunction()">McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>
 	<div id="cheer">
 
 	</div>
+	<div id="mycheer">
+
+	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
-	<br>
-	<button onclick=handleClick2() id="Spring-button">Spring Equinox 2019</button>
 
 </body>
 </html>
