@@ -79,23 +79,19 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-I have to put // charaters before a comment
+I have to put `//` characters before a comment
 ```js
 //This is a comment
 ```
-
-
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
-
+I need to open the html file in the browser.
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
-We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes the data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print funciton in python, we should use alert() function.
+We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print funciton in python, we should use alert() function.
 
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 ```js
 //alert("hello");
-
-The current date/time is: <input type=text id = "time"></span><br/>
 ```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
@@ -117,6 +113,7 @@ It would be browser's default (by default- white)
 Because their style (for <p> tag) determined by CSS under <style> tag. I can change the `background-color: #b3b3b3;` code. I would replace #b3b3b3 hex code with desired color.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+I can use the similar logic that used for University of Michigan text. copyfunction() has the same action so I adjusted it for the McGill University text.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -130,7 +127,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-We have added an event to the button's on click event so when we press the button, it calls handleClick() function which is declared before.
+We have added an event to the button's onclick event so when we press the button, it calls handleClick() function which is declared before.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
@@ -142,7 +139,7 @@ We have added an event to the button's on click event so when we press the butto
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
-They are determined by CSS under <style> tag. 
+Their colors  are (valid/non-valid values) determined by CSS under <style> tag. 
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 It checks the input to make sure that user entered the word only. It is a pattern for user input.
@@ -158,7 +155,7 @@ It represent the duration of the error message in miliseconds.
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+I think that when the we page loaded, it makes the function available.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
