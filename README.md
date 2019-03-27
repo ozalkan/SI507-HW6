@@ -84,8 +84,11 @@ I have to put `//` characters before a comment
 //This is a comment
 ```
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
 I need to open the html file in the browser.
+
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
 We can use console.log() and alert() functions to write something. We might use alert() function (like print function). This function would show a pop-up box includes our string in the browser window. On the other hand, console.log() function writes data in the browser's console. This is useful to debug our code. Thus, if we want to write in the web page, similar to print funciton in python, we should use alert() function.
 
 
@@ -98,7 +101,9 @@ We can use console.log() and alert() functions to write something. We might use 
 I would change the string (currently `A name` string) in the displayInformation () function.
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
 Document object represents the html document which is displayed in the bvrowser window. It has various properties that refer to other objects so we can use them to reach other elements in the page.
+
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
@@ -106,6 +111,7 @@ Document object represents the html document which is displayed in the bvrowser 
 It reaches to li (list) element, count them and writes in the `items` element.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
 It would be browser's default (by default- white)
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
@@ -113,6 +119,7 @@ It would be browser's default (by default- white)
 Because their style (for <p> tag) determined by CSS under <style> tag. I can change the `background-color: #b3b3b3;` code. I would replace #b3b3b3 hex code with desired color.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
 I can use the similar logic that used for University of Michigan text. copyfunction() has the same action so I adjusted it for the McGill University text.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
@@ -139,14 +146,17 @@ We have added an event to the button's onclick event so when we press the button
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+
 Their colors  are (valid/non-valid values) determined by CSS under <style> tag. 
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
 It checks the input to make sure that user entered the word only. It is a pattern for user input.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
 It represent the duration of the error message in miliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
